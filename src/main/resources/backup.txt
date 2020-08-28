@@ -1,0 +1,11 @@
+1、启动springboot项目在浏览器中输入:http://localhost:8080/接口名称，可以访问接口
+2、输入http://localhost:8080/swagger-ui.html访问接口文档
+3、通过usb线连接手机或者通过无线连接手机都可以：
+    1.手机打开开发者模式，然后打开USB调试
+    2.使用USB数据线连接手机和电脑
+    3.在PC端打开cmd命令窗口，输入adb devices ，可以看到已经连接的设备
+    4.输入adb tcpip 8888   （设置端口号为8888）
+    5.断开手机和电脑的连接
+    6.输入adb connect 10.67.161.8:8888，连接成功
+    7.断开连接adb disconnect 10.67.161.8:8888
+    8.下次再连直接adb connect 10.67.161.8:8888就可以，如果不行就再输入一次adb tcpip 8888
